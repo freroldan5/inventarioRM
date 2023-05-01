@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.Menu">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"  Text="Menú Principal" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                <BoxView Grid.Row="1"></BoxView>
+                <Button Grid.Row="2"  ImageSource="crear128.png" Text="Crear Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <BoxView Grid.Row="3"></BoxView>
+                <Button Grid.Row="4"  ImageSource="ingreso128.png" Text="Ingreso Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <BoxView Grid.Row="5"></BoxView>
+                <Button Grid.Row="6"  ImageSource="salida128.png" Text="Salida Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <BoxView Grid.Row="7"></BoxView>
+                <Button Grid.Row="8"  ImageSource="inventario128.png" Text="Inventario" BackgroundColor="Transparent" CornerRadius="20"></Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

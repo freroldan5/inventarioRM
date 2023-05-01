@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.CrearProducto">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"  Text="Crear Producto" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                <BoxView Grid.Row="1"></BoxView>
+                <Button Grid.Row="2" Text="Cargar Imagen" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20"></Button>
+                <Label Grid.Row="3"  ></Label>
+                <BoxView Grid.Row="4"></BoxView>
+                <Label Grid.Row="5"  Text=" Codigo de Barra" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="6"  Placeholder="Barcode" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="7"></BoxView>
+                <Label Grid.Row="8"  Text=" Nombre" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="9"  Placeholder="Product Name" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="10"></BoxView>
+                <Label Grid.Row="11"  Text=" Precio" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="12"  Placeholder="Price" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="13"></BoxView>
+                <Label Grid.Row="14"  Text=" Descripcion" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="15"  Placeholder="Description" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="16"></BoxView>
+                <Button Grid.Row="17" Text="Guardar" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="70,0,70,0"></Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
