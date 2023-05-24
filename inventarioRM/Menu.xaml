@@ -15,16 +15,16 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0"  Text="Menú Principal" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
                 <BoxView Grid.Row="1"></BoxView>
-                <Button Grid.Row="2"  ImageSource="crear128.png" Text="Crear Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <Button x:Name="btnInventarioP" Clicked="btnInventarioP_Clicked"  Grid.Row="2" ImageSource="inventario128.png" Text="Inventario" BackgroundColor="Transparent" CornerRadius="20"></Button>
                 <BoxView Grid.Row="3"></BoxView>
-                <Button Grid.Row="4"  ImageSource="ingreso128.png" Text="Ingreso Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <Button x:Name="btnIngresoProv" Clicked="btnIngresoProv_Clicked" Grid.Row="4"  ImageSource="prov2.jpeg" Text="Ingreso Proveedor" BackgroundColor="Transparent" CornerRadius="20"></Button>
                 <BoxView Grid.Row="5"></BoxView>
-                <Button Grid.Row="6"  ImageSource="salida128.png" Text="Salida Producto" BackgroundColor="Transparent" CornerRadius="20"></Button>
-                <BoxView Grid.Row="7"></BoxView>
-                <Button Grid.Row="8"  ImageSource="inventario128.png" Text="Inventario" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                <Button x:Name="BtnCerrarApp" Clicked="BtnCerrarApp_Clicked" Grid.Row="6"  ImageSource="exit.jpeg" Text="CERRAR APP" BackgroundColor="Transparent" CornerRadius="20"></Button>
+                
             </Grid>
         </ScrollView>
     </ContentPage.Content>

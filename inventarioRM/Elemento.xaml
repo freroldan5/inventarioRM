@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.Elemento">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="10,25,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"  Text="Actualizar y Eliminar" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                    <BoxView Grid.Row="1"></BoxView>
+                    <Label Grid.Row="2"  ></Label>
+                    <BoxView Grid.Row="3"></BoxView>
+                    <Label Grid.Row="4"  Text="ID" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtcodigo" Grid.Row="5"  Placeholder="Id" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="6"></BoxView>
+                    <Label Grid.Row="7"  Text=" Nombre" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtnombre" Grid.Row="8"  Placeholder="Nombre del producto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="9"></BoxView>
+                    <Label Grid.Row="10"  Text=" Descripcion" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtdescripcion"  Grid.Row="11"  Placeholder="Descripcion del Producto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="12"></BoxView>
+                    <Label Grid.Row="13"  Text=" Cantidad" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtcantidad" Keyboard="Numeric" Grid.Row="14"  Placeholder=" Cantidad" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="15"></BoxView>
+                    <Label Grid.Row="16"  Text=" Precio" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtprecio" Keyboard="Numeric" Grid.Row="17"  Placeholder="Precio" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="18"></BoxView>
+                    <Label Grid.Row="19"  Text="Fecha de ingreso" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtfecha" Grid.Row="20"  Placeholder="Fecha de ingreso" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="21"></BoxView>
+                    <Label Grid.Row="22"  Text="Proveedor" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                    <Entry x:Name="txtproveedor"  Grid.Row="23"  Placeholder="Proveedor" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <BoxView Grid.Row="24"></BoxView>
+                    <Button Grid.Row="25"  Text="Actualizar" Clicked="btnActualizar_Clicked" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="70,0,70,0"></Button>
+                    <BoxView Grid.Row="26"></BoxView>
+                    <Button Grid.Row="27" Text="Eliminar" Clicked="btnEliminar_Clicked" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="70,0,70,0"></Button>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

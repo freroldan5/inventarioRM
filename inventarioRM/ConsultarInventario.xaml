@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.ConsultarInventario"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Listado de Productos" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="" Grid.Row="0" ></Label>
+                <Button x:Name="bntAgregarP" Text="Agregar Producto"  Background="DarkRed" TextColor="White" CornerRadius="20" Clicked="bntAgregarP_Clicked" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="bntRegresar" Text="Regresar"  Background="DarkRed" TextColor="White" CornerRadius="20" Clicked="bntRegresar_Clicked" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Id" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Nombre" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Descripcion" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Precio" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="3"/>
+                <Label Text="Fecha" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="4"/>
+                <Label Text="Prov." FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="5"/>
+            </Grid>
+            <ListView x:Name="ListaProductos" ItemSelected="ListaProductos_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label x:Name=" lblcodigo" Text="{ Binding codigo}" Grid.Row="0" Grid.Column="0"/>
+                                    <Label x:Name=" lblnombre" Text="{ Binding nombre}" Grid.Row="0" Grid.Column="1"/>
+                                    <Label x:Name=" lbldescripcion" Text="{ Binding descripcion}" Grid.Row="0" Grid.Column="2"/>
+                                    <Label x:Name=" lblcantidad" Text="{ Binding cantidad}" Grid.Row="0" Grid.Column="3"/>
+                                    <Label x:Name=" lblprecio" Text="{ Binding precio}" Grid.Row="0" Grid.Column="4"/>
+                                    <Label x:Name=" lblfechaIngreso" Text="{ Binding fechaIngreso}" Grid.Row="0" Grid.Column="5"/>
+                                    <Label x:Name=" lblproveedor" Text="{ Binding proveedor}" Grid.Row="0" Grid.Column="6"/>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

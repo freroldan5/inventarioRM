@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.IngresoProv"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Listado de Porveedores" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="" Grid.Row="0" ></Label>
+                <Button x:Name="bntAgregarProveedor" Text="Agregar Proveedor"  Background="DarkRed" TextColor="White" CornerRadius="20" Clicked="bntAgregarProveedor_Clicked" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="bntRegresarProv" Text="Regresar"  Background="DarkRed" TextColor="White" CornerRadius="20" Clicked="bntRegresarProv_Clicked" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Id" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Nombre" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Direccion" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Telefono" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="3"/>
+                <Label Text="Representante" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="4"/>
+                <Label Text="Correo" FontAttributes="Bold" TextColor="#1C375C" Grid.Row="0" Grid.Column="5"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

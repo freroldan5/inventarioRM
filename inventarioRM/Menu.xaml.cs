@@ -16,5 +16,26 @@ namespace inventarioRM
         {
             InitializeComponent();
         }
+
+        private void btnProducto_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CrearProducto());
+        }
+
+        private void btnInventarioP_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ConsultarInventario());
+
+        }
+
+        private void btnIngresoProv_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new IngresoProv());
+        }
+
+        private void BtnCerrarApp_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Login());
+        }
     }
 }

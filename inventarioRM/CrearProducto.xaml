@@ -4,8 +4,13 @@
              x:Class="inventarioRM.CrearProducto">
     <ContentPage.Content>
         <ScrollView>
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="10,25,10,0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
@@ -27,22 +32,27 @@
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0"  Text="Crear Producto" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
                 <BoxView Grid.Row="1"></BoxView>
-                <Button Grid.Row="2" Text="Cargar Imagen" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20"></Button>
-                <Label Grid.Row="3"  ></Label>
-                <BoxView Grid.Row="4"></BoxView>
-                <Label Grid.Row="5"  Text=" Codigo de Barra" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
-                <Entry Grid.Row="6"  Placeholder="Barcode" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
-                <BoxView Grid.Row="7"></BoxView>
-                <Label Grid.Row="8"  Text=" Nombre" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
-                <Entry Grid.Row="9"  Placeholder="Product Name" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
-                <BoxView Grid.Row="10"></BoxView>
-                <Label Grid.Row="11"  Text=" Precio" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
-                <Entry Grid.Row="12"  Placeholder="Price" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
-                <BoxView Grid.Row="13"></BoxView>
-                <Label Grid.Row="14"  Text=" Descripcion" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
-                <Entry Grid.Row="15"  Placeholder="Description" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
-                <BoxView Grid.Row="16"></BoxView>
-                <Button Grid.Row="17" Text="Guardar" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="70,0,70,0"></Button>
+                <Label Grid.Row="2"  ></Label>
+                <BoxView Grid.Row="3"></BoxView>
+                <Label Grid.Row="4"  Text=" Nombre" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtnombre" Grid.Row="5"  Placeholder="Nombre del producto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="6"></BoxView>
+                <Label Grid.Row="7"  Text=" Descripcion" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtdescripcion"  Grid.Row="8"  Placeholder="Descripcion del Producto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="9"></BoxView>
+                <Label Grid.Row="10"  Text=" Cantidad" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtcantidad" Keyboard="Numeric" Grid.Row="11"  Placeholder=" Cantidad" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="12"></BoxView>
+                <Label Grid.Row="13"  Text=" Precio" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtprecio" Keyboard="Numeric" Grid.Row="14"  Placeholder="Precio" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="15"></BoxView>
+                <Label Grid.Row="16"  Text="Fecha de ingreso" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtfechaIngreso"  Grid.Row="17"  Placeholder="Fecha de ingreso" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="18"></BoxView>
+                <Label Grid.Row="19"  Text="Proveedor" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtproveedor"  Grid.Row="20"  Placeholder="Proveedor" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="21"></BoxView>
+                <Button Grid.Row="22" Text="Guardar" Clicked="Button_Clicked" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="70,0,70,0"></Button>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

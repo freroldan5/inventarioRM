@@ -10,7 +10,7 @@ namespace inventarioRM
         {
             InitializeComponent();
 
-            MainPage = new CrearProducto();
+            MainPage = new NavigationPage (new Login());
         }
 
         protected override void OnStart()
